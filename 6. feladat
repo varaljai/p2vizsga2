@@ -1,0 +1,6 @@
+# 6
+def legritkabb_karakter(txt):
+    stat = dict()
+    for karakter in txt:
+        stat[karakter] = stat.get(karakter, 0) + 1
+    return min(stat, key=stat.get)  
