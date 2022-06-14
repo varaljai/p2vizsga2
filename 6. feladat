@@ -4,3 +4,19 @@ def legritkabb_karakter(txt):
     for karakter in txt:
         stat[karakter] = stat.get(karakter, 0) + 1
     return min(stat, key=stat.get)  
+
+
+
+
+
+
+
+ahogyan lessz:
+def betuk_szama(fname):
+    return len(open(fname).read())
+
+txt:
+def betuk_szama(fname):
+    with open(fname) as f:
+        txt = f.read()
+        return len(txt)
